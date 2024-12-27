@@ -1,0 +1,34 @@
+<div class="product-card">
+  <div
+    class="close-button"
+    style="text-align: end; cursor: pointer"
+    (click)="onClickCloseButton()"
+  >
+    <mat-icon
+      aria-hidden="false"
+      aria-label="Example home icon"
+      fontIcon="close"
+    ></mat-icon>
+  </div>
+
+  <img
+    class="blog_posts_post--image"
+    [src]="'./assets/apple.jpg'"
+    loading="lazy"
+  />
+  <div class="price-label">
+    <h3 class="price-text">Price : $100</h3>
+  </div>
+
+  <h2>{{ productName() }}</h2>
+  <p class="product-description">
+    {{ productDescription() }}
+  </p>
+  <button
+    mat-flat-button
+    style="background-color: rgb(0, 132, 255); color: aliceblue"
+  >
+    Order
+  </button>
+  <ng-content> </ng-content>
+</div>

@@ -1,0 +1,16 @@
+<div class="container">
+  <!-- Buttons row -->
+  <div class="buttons-container">
+    <div class="btn btn-primary" (click)="onCrateButtonClick()">
+      <a>Add Dynamic Component</a>
+    </div>
+    <div class="btn" (click)="onDestroyButtonClick()">
+      <a>Remove Dynamic Component</a>
+    </div>
+  </div>
+
+  <!-- Product cards row -->
+  <div class="cards">
+    <ng-container #container> </ng-container>
+  </div>
+</div>
